@@ -1,0 +1,64 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color: #4a4659; ;
+}
+
+#backgroundImg{
+  width: 1500px;
+  height: 730px;
+  margin: 100px auto auto auto;
+  display: block;
+  border: solid;
+  border-width: 10px;
+  background-color: #211f28;
+  background-image: url("Images/Zones/IntroScreen/IntroScreenv4.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#progButton{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 250px auto auto auto;
+  z-index: 3;
+}
+
+#diaBox{
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  font-size: 1.5em;
+  color: #958fae;
+  margin: 10px auto auto auto;
+  padding: 50px;
+  width: 1200px;
+  height: 100px;
+  border: solid;
+  border-color: black;
+  border-width: 10px;
+  border-radius: 10px;
+  background-color: #2d2b36;
+}
+
+#littleGuy{
+  display: none;
+  position: relative;
+  background-color: #242333;
+  height: 100px;
+  width: 100px;
+  left: 1050px;
+  bottom: 400px;
+  z-index: 1;
+}
+
+#interactionBox{
+  position: relative;
+  bottom: 350px; 
+  left: 280px;
+  width: 200px;
+  height: 300px;
+}
