@@ -40,6 +40,7 @@ let branchDia = ["ERROR!","The flame flickers with a strange purple hue...",
 
 function changeBackgound(){
   console.log("changeBackground activated!...");
+  document.getElementById("DoorEffectPlayer").play();
   document.getElementById("backgroundImg").style.backgroundImage = ImgList1[progCounter+1][0];
   document.getElementById("frame2").style.backgroundImage = ImgList1[progCounter+1][1];
   document.getElementById("progButton").style.margin = progButtPos[progCounter];
@@ -54,6 +55,7 @@ function changeBackgound(){
 
 function itemClicked(){
   console.log("Clickable clicked!");
+  document.getElementById("SoundEffectPlayer"+progCounter).play();
   document.getElementById("diaBox").innerText = branchDia[progCounter];
 }
 
@@ -88,9 +90,11 @@ function animate(){
       document.getElementById("littleGuy"+littleGuyCounter2).style.backgroundImage ="url('Images/Little%20Guy/LittleGuy(1)(GR).png')";
       littleGuyCounter2++
     }else
-      if(littleGuyCounter2 > 5){
+      if(littleGuyCounter2 == 6){
+        document.getElementById("SoundEffectPlayer").play();
         document.getElementById("GameOverScreen").style.zIndex ="10";
         document.getElementById("diaBox").innerText = "YOU HAVE BEEN GNOMED.";
+        littleGuyCounter2++;
       }
     
   }
